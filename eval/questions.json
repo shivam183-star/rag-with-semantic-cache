@@ -1,0 +1,158 @@
+{
+  "base_questions": [
+    {
+      "id": "q1",
+      "question": "What is Article 21 of the Indian Constitution?",
+      "topic": "Fundamental Rights - Right to Life",
+      "expected_article": "Article 21"
+    },
+    {
+      "id": "q2",
+      "question": "Which article guarantees the Right to Education?",
+      "topic": "Fundamental Rights - Education",
+      "expected_article": "Article 21A"
+    },
+    {
+      "id": "q3",
+      "question": "What is Article 14 of the Constitution about?",
+      "topic": "Fundamental Rights - Equality",
+      "expected_article": "Article 14"
+    },
+    {
+      "id": "q4",
+      "question": "Explain the freedoms guaranteed under Article 19.",
+      "topic": "Fundamental Rights - Six Freedoms",
+      "expected_article": "Article 19"
+    },
+    {
+      "id": "q5",
+      "question": "What are the remedies for enforcement of fundamental rights under Article 32?",
+      "topic": "Constitutional Remedies",
+      "expected_article": "Article 32"
+    },
+    {
+      "id": "q6",
+      "question": "What does Article 370 of the Indian Constitution deal with?",
+      "topic": "Temporary Provisions - Jammu and Kashmir",
+      "expected_article": "Article 370"
+    },
+    {
+      "id": "q7",
+      "question": "What is Article 48A regarding protection of environment and wildlife?",
+      "topic": "Directive Principles - Environment",
+      "expected_article": "Article 48A"
+    },
+    {
+      "id": "q8",
+      "question": "What does Article 51A state about Fundamental Duties?",
+      "topic": "Fundamental Duties",
+      "expected_article": "Article 51A"
+    },
+    {
+      "id": "q9",
+      "question": "What are the provisions of Article 352 concerning National Emergency?",
+      "topic": "Emergency Provisions",
+      "expected_article": "Article 352"
+    },
+    {
+      "id": "q10",
+      "question": "What does the Preamble of the Constitution of India declare?",
+      "topic": "Preamble",
+      "expected_article": "Preamble"
+    }
+  ],
+  "paraphrases": [
+    {
+      "base_id": "q1",
+      "question": "Explain the protection of life and personal liberty under Article 21."
+    },
+    {
+      "base_id": "q1",
+      "question": "Can you summarize Article 21 right to life?"
+    },
+    {
+      "base_id": "q2",
+      "question": "What article provides free and compulsory education for children in India?"
+    },
+    {
+      "base_id": "q2",
+      "question": "Tell me about the fundamental right to education under Article 21A."
+    },
+    {
+      "base_id": "q3",
+      "question": "What does Article 14 say about equality before the law?"
+    },
+    {
+      "base_id": "q3",
+      "question": "Explain the equality clause in Article 14 of the Constitution."
+    },
+    {
+      "base_id": "q4",
+      "question": "What are the six democratic freedoms mentioned in Article 19?"
+    },
+    {
+      "base_id": "q4",
+      "question": "Does Article 19 protect freedom of speech and expression?"
+    },
+    {
+      "base_id": "q5",
+      "question": "What writs can be issued under Article 32 by the Supreme Court?"
+    },
+    {
+      "base_id": "q5",
+      "question": "Explain the right to move the Supreme Court for constitutional remedies under Article 32."
+    },
+    {
+      "base_id": "q6",
+      "question": "Tell me about the special provisions related to Jammu and Kashmir in Article 370."
+    },
+    {
+      "base_id": "q7",
+      "question": "Which article instructs the state to safeguard forests and wildlife?"
+    },
+    {
+      "base_id": "q8",
+      "question": "What are the citizen duties defined under Article 51A?"
+    },
+    {
+      "base_id": "q9",
+      "question": "Under which article can a Proclamation of Emergency be issued in India?"
+    },
+    {
+      "base_id": "q10",
+      "question": "What are the key ideals set forth in the Preamble to the Indian Constitution?"
+    }
+  ],
+  "near_miss_questions": [
+    {
+      "question": "What is Article 22 regarding protection against arrest and detention?",
+      "should_hit": false,
+      "base_relation": "Near Article 21 but asks about Article 22"
+    },
+    {
+      "question": "What is Article 15 prohibiting discrimination on grounds of religion?",
+      "should_hit": false,
+      "base_relation": "Near Article 14 equality but asks about Article 15"
+    },
+    {
+      "question": "Explain Article 356 regarding President's Rule in States.",
+      "should_hit": false,
+      "base_relation": "Near Article 352 emergency but asks about Article 356"
+    },
+    {
+      "question": "What is Article 20 protection in respect of conviction for offences?",
+      "should_hit": false,
+      "base_relation": "Near Article 21 but asks about Article 20"
+    }
+  ],
+  "out_of_scope_questions": [
+    {
+      "question": "How to make a chocolate cake?",
+      "should_hit": false
+    },
+    {
+      "question": "What is the capital of France?",
+      "should_hit": false
+    }
+  ]
+}

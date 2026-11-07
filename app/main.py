@@ -39,6 +39,16 @@ app.add_middleware(
 )
 
 
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "service": "RAG Semantic Cache API",
+        "docs": "/docs",
+        "health": "/health",
+    }
+
+
 @app.get("/health")
 def health(cache=Depends(get_cache), rag=Depends(get_rag)):
     return {"status": "ok", "docs_chunks": rag.doc_count(), "cache_entries": cache.count()}

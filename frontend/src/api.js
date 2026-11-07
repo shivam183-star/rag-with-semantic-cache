@@ -1,4 +1,6 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const rawBase = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+let API_BASE = rawBase.trim().replace(/\/+$/, '');
+API_BASE = API_BASE.replace(/\/(health|docs|ask|stats|logs)$/i, '');
 
 export async function askQuestion({ question, history = [], threshold = null, runTag = 'web_chat', dryRun = false }) {
   const res = await fetch(`${API_BASE}/ask`, {
@@ -20,9 +22,17 @@ export async function askQuestion({ question, history = [], threshold = null, ru
 }
 
 export async function fetchHealth() {
-  const res = await fetch(`${API_BASE}/health`);
-  if (!res.ok) throw new Error('Health check failed');
-  return res.json();
+  try {
+    const res = await fetch(`${API_BASE}/health`);
+    if (!res.ok) {
+      console.warn(`Health check failed with status ${res.status}`);
+      throw new Error(`Health check failed with status ${res.status}`);
+    }
+    return await res.json();
+  } catch (err) {
+    console.error(`Failed to reach API at ${API_BASE}/health:`, err);
+    throw err;
+  }
 }
 
 export async function fetchStats(runTag = null) {

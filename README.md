@@ -6,8 +6,8 @@ A production-grade Retrieval-Augmented Generation (RAG) system with a high-perfo
 
 ## Live Deployment
 
-- **Live Demo (Vercel Frontend)**: `https://rag-with-semantic-cache.vercel.app/`
-- **API Documentation (Swagger UI)**: `https://rag-with-semantic-cache.onrender.com/docs` 
+- **Live Demo (Vercel Frontend)**: https://rag-with-semantic-cache.vercel.app/
+- **API Documentation (Swagger UI)**: https://rag-with-semantic-cache.onrender.com/docs
 
 ---
 
